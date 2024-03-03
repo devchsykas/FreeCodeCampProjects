@@ -1,0 +1,315 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">service request form</h1>
+    <p id="description">
+      please fill the form below and we will call you immediately
+    </p>
+    <form id="survey-form">
+      <label for="name" id="name-label">first name</label>
+      <input type="text" id="name" placeholder="Name" required />
+      <label for="surname" id="surname-label">last name</label>
+      <input type="text" id="surname" placehoder="surname" required />
+      <label for="company" id="company-label">company</label>
+      <input type="text" id="company" required />
+      <label for="address" id="address-label">street address</label>
+      <input type="text" id="address" placeholder="Street Address" required />
+      <label for="city" id="city-label">city</label>
+      <input type="text" id="city" placeholder="City" required />
+      <label for="postal" id="postal-label">postal / zip code</label>
+      <input type="number" id="postal" placeholder="85300" required />
+      <label for="country" id="country-label">country</label>
+      <select id="dropdown" name="country">
+        <option value="greece">greece</option>
+        <option value="bulgaria">bulgaria</option>
+        <option value="albania">albania</option>
+        <option value="turkey">turkey</option>
+      </select>
+      <label for="phone-number" id="number-label">phone number</label>
+      <input
+        type="number"
+        id="number"
+        min="10"
+        max="100"
+        placeholder="+00302102567569"
+      />
+      <label for="email" id="email-label">email</label>
+      <input type="email" id="email" placeholder="you@domain.com" required />
+      <label for="category" id="category-label">problem category</label>
+      <input
+        type="radio"
+        id="software"
+        value="software"
+        name="problem-category"
+      />
+      <label for="software">software</label>
+      <input
+        type="radio"
+        id="hardware"
+        value="hardware"
+        name="problem-category"
+      />
+      <label for="hardware">hardware</label>
+      <input
+        type="radio"
+        id="network"
+        value="network"
+        name="problem-category"
+      />
+      <label for="network">network</label>
+      <input type="radio" id="other" value="other" name="problem-category" />
+      <label for="other">other</label>
+      <label for="category">choose your option</label>
+      <input type="checkbox" id="vscode" name="vscode" value="vscode" />
+      <label for="vscode">vscode</label>
+      <input type="checkbox" id="mongodb" name="mongodb" value="mongodb" />
+      <label for="mongodb">mongodb</label>
+      <input type="checkbox" id="figma" name="figma" value="figma" />
+      <label for="figma">figma</label>
+      <input
+        type="checkbox"
+        id="motherboard"
+        name="motherboard"
+        value="motherboard"
+      />
+      <label for="motherboard">motherboard</label>
+      <input type="checkbox" id="harddisk" name="harddisk" value="harddisk" />
+      <label for="harddisk">harddisk</label>
+      <input type="checkbox" id="printer" name="printer" value="printer" />
+      <label for="printer">printer</label>
+      <input
+        type="checkbox"
+        id="network-card"
+        name="network-card"
+        value="network-card"
+      />
+      <label for="motherboard">network card</label>
+      <input type="checkbox" id="router" name="router" value="router" />
+      <label for="router">router</label>
+      <input type="checkbox" id="server" name="server" value="server" />
+      <label for="server">server</label>
+      <input type="checkbox" id="other" name="other" value="other" />
+      <label for="other">other</label>
+      <label for="problem-description">describe your problems</label>
+      <textarea
+        id="problem-description"
+        name="problem-description"
+        rows="5"
+        cols="33"
+      ></textarea>
+      <label for="info">how would you like us to help you?</label>
+      <textarea id="info" name="info" rows="5" cols="33"></textarea>
+      <button type="submit" id="submit" value="submit">submit form</button>
+    </form>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Request Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1 id="title">Service Request Form</h1>
+      <p id="description">
+        Please fill out the form below, and we will call you immediately.
+      </p>
+    </header>
+
+    <!-- Form Section -->
+    <form id="survey-form">
+      <!-- Personal Information -->
+      <fieldset class="form-section">
+        <legend>Personal Information</legend>
+        <label for="name" class="form-label">First Name</label>
+        <input
+          type="text"
+          id="name"
+          class="form-input"
+          placeholder="Your Name"
+          required
+        />
+
+        <label for="surname" class="form-label">Last Name</label>
+        <input
+          type="text"
+          id="surname"
+          class="form-input"
+          placeholder="Your Surname"
+          required
+        />
+
+        <label for="company" class="form-label">Company</label>
+        <input type="text" id="company" class="form-input" required />
+      </fieldset>
+
+      <!-- Address Information -->
+      <fieldset class="form-section">
+        <legend>Address Information</legend>
+        <label for="address" class="form-label">Street Address</label>
+        <input
+          type="text"
+          id="address"
+          class="form-input"
+          placeholder="Street Address"
+          required
+        />
+
+        <label for="city" class="form-label">City</label>
+        <input
+          type="text"
+          id="city"
+          class="form-input"
+          placeholder="City"
+          required
+        />
+
+        <label for="postal" class="form-label">Postal / Zip Code</label>
+        <input
+          type="number"
+          id="postal"
+          class="form-input"
+          placeholder="85300"
+          required
+        />
+
+        <label for="country" class="form-label">Country</label>
+        <select id="dropdown" name="country" class="form-input">
+          <option value="greece">Greece</option>
+          <option value="bulgaria">Bulgaria</option>
+          <option value="albania">Albania</option>
+          <option value="turkey">Turkey</option>
+        </select>
+      </fieldset>
+
+      <!-- Contact Information -->
+      <fieldset class="form-section">
+        <legend>Contact Information</legend>
+        <label for="phone-number" id="number-label" class="form-label"
+          >Phone Number</label
+        >
+        <input
+          type="tel"
+          id="phone-number"
+          class="form-input"
+          placeholder="+00302102567569"
+        />
+
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="form-input"
+          placeholder="you@domain.com"
+          required
+        />
+      </fieldset>
+
+      <!-- Problem Category -->
+      <fieldset class="form-section">
+        <legend>Problem Category</legend>
+        <input
+          type="radio"
+          id="software"
+          value="software"
+          name="problem-category"
+        />
+        <label for="software" class="form-label">Software</label>
+
+        <input
+          type="radio"
+          id="hardware"
+          value="hardware"
+          name="problem-category"
+        />
+        <label for="hardware" class="form-label">Hardware</label>
+
+        <input
+          type="radio"
+          id="network"
+          value="network"
+          name="problem-category"
+        />
+        <label for="network" class="form-label">Network</label>
+
+        <input type="radio" id="other" value="other" name="problem-category" />
+        <label for="other" class="form-label">Other</label>
+      </fieldset>
+
+      <!-- Preferred Tools -->
+      <fieldset class="form-section">
+        <legend>Choose your options</legend>
+        <input type="checkbox" id="vscode" name="vscode" value="vscode" />
+        <label for="vscode" class="form-label">VSCode</label>
+        <input type="checkbox" id="mongodb" name="mongodb" value="mongodb" />
+        <label for="mongodb" class="form-label">MongoDB</label>
+        <input type="checkbox" id="figma" name="figma" value="figma" />
+        <label for="figma" class="form-label">Figma</label>
+        <input
+          type="checkbox"
+          id="motherboard"
+          name="motherboard"
+          value="motherboard"
+        />
+        <label for="motherboard" class="form-label">Motherboard</label>
+        <input type="checkbox" id="harddisk" name="harddisk" value="harddisk" />
+        <label for="harddisk" class="form-label">Hard Disk</label>
+        <input type="checkbox" id="printer" name="printer" value="printer" />
+        <label for="printer" class="form-label">Printer</label>
+        <input type="checkbox" id="router" name="router" value="router" />
+        <label for="router" class="form-label">Router</label>
+        <input type="checkbox" id="server" name="server" value="server" />
+        <label for="server" class="form-label">Server</label>
+        <input
+          type="checkbox"
+          id="network-card"
+          name="network-card"
+          value="network-card"
+        />
+        <label for="network-card" class="form-label">Network Card</label>
+        <input type="checkbox" id="other" name="other" value="other" />
+        <label for="other" class="form-label">Other</label>
+        <!-- Add similar checkboxes for other tools -->
+      </fieldset>
+
+      <!-- Problem Description and Additional Information -->
+      <fieldset class="form-section">
+        <legend>Describe Your Problems</legend>
+        <label for="problem-description" class="form-label"
+          >Problem Description</label
+        >
+        <textarea
+          id="problem-description"
+          name="problem-description"
+          rows="5"
+          cols="33"
+          class="form-input"
+        ></textarea>
+
+        <label for="info" class="form-label"
+          >How Would You Like Us to Help You?</label
+        >
+        <textarea
+          id="info"
+          name="info"
+          rows="5"
+          cols="33"
+          class="form-input"
+        ></textarea>
+      </fieldset>
+
+      <!-- Submit Button -->
+      <button type="submit" id="submit" class="form-button">Submit Form</button>
+    </form>
+  </body>
+</html>
