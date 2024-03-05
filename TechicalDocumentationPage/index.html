@@ -349,7 +349,59 @@
         </p>
       </section>
       <section class="main-section" id="what_is_this?">
-        <header>What is "this"?</header>
+        <header class="underline">What is "this"?</header>
+        <p>
+          You may have noticed something slightly strange in our methods. Look
+          at this one for example:
+        </p>
+        <code>
+          introduceSelf() { <br />
+          console.log(`Hi! I'm ${this.name[0]}.`); <br />
+          }
+        </code>
+        <p>
+          You are probably wondering what <span class="hi`">"this"</span> is.
+          The this keyword refers to the current object the code is being
+          written inside — so in this case
+          <span class="highlight">this</span> is equivalent to
+          <span class="highlight">person</span>. So why not just write
+          <span class="highlight">person</span> instead?
+        </p>
+        <p>
+          Well, when you only have to create a single object literal, it's not
+          so useful. But if you create more than one,
+          <span class="highlight">this</span> enables you to use the same method
+          definition for every object you create.
+        </p>
+        <p>
+          Let's illustrate what we mean with a simplified pair of person
+          objects:
+        </p>
+        <code>
+          const person1 = { <br />
+          name: "Chris", <br />
+          introduceSelf() { <br />
+          console.log(`Hi! I'm ${this.name}.`); <br />
+          }, <br />
+          }; <br />
+
+          const person2 = { <br />
+          name: "Deepti", <br />
+          introduceSelf() { <br />
+          console.log(`Hi! I'm ${this.name}.`); <br />
+          }, <br />
+          };
+        </code>
+        <p>
+          In this case,
+          <span class="highlight">person1.introduceSelf()</span> outputs "Hi!
+          I'm Chris."; <span class="highlight">person2.introduceSelf()</span> on
+          the other hand outputs "Hi! I'm Deepti.", even though the method's
+          code is exactly the same in each case. This isn't hugely useful when
+          you are writing out object literals by hand, but it will be essential
+          when we start using constructors to create more than one object from a
+          single object definition, and that's the subject of the next section.
+        </p>
       </section>
       <section class="main-section" id="introducing_constructors">
         <header>Introducing constructors</header>
