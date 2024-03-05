@@ -178,7 +178,48 @@
         </code>
       </section>
       <section class="main-section" id="objects_as_object_properties">
-        <header>Objects as object properties</header>
+        <header class="underline">Objects as object properties</header>
+        <p>
+          An object property can itself be an object. For example, try changing
+          the <span class="highlight">name</span> member from
+        </p>
+        <code>
+          const person = { <br />
+          name: ["Bob", "Smith"], <br />
+          };
+        </code>
+        <p>to</p>
+        <code>
+          const person = { <br />
+          name: { <br />
+          first: "Bob", <br />
+          last: "Smith", <br />
+          }, <br />
+          // … <br />
+          };
+        </code>
+        <p>
+          To access these items you just need to chain the extra step onto the
+          end with another dot. Try these in the JS console:
+        </p>
+        <code>
+          person.name.first; <br />
+          person.name.last;
+        </code>
+        <p>
+          If you do this, you'll also need to go through your method code and
+          change any instances of
+        </p>
+        <code>
+          name[0]; <br />
+          name[1];
+        </code>
+        <p>to</p>
+        <code>
+          name.first; <br />
+          name.last;
+        </code>
+        <p>Otherwise, your methods will no longer work.</p>
       </section>
       <section class="main-section" id="bracket_notation">
         <header>Bracket notation</header>
