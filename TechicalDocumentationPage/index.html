@@ -277,6 +277,76 @@
       </section>
       <section class="main-section" id="setting_object_members">
         <header class="underline">Setting object members</header>
+        <p>
+          So far we've only looked at retrieving (or getting) object members —
+          you can also set (update) the value of object members by declaring the
+          member you want to set (using dot or bracket notation), like this:
+        </p>
+        <code>
+          person.age = 45; <br />
+          person["name"]["last"] = "Cratchit";
+        </code>
+        <p>
+          Try entering the above lines, and then getting the members again to
+          see how they've changed, like so:
+        </p>
+        <code>
+          person.age; <br />
+          person["name"]["last"];
+        </code>
+        <p>
+          Setting members doesn't just stop at updating the values of existing
+          properties and methods; you can also create completely new members.
+          Try these in the JS console:
+        </p>
+        <code>
+          person["eyes"] = "hazel"; <br />
+          person.farewell = function () { <br />
+          console.log("Bye everybody!"); <br />
+          };
+        </code>
+        <p>You can now test out your new members:</p>
+        <code>
+          person["eyes"]; <br />
+          person.farewell(); <br />
+          // "Bye everybody!"
+        </code>
+        <p>
+          One useful aspect of bracket notation is that it can be used to set
+          not only member values dynamically, but member names too. Let's say we
+          wanted users to be able to store custom value types in their people
+          data, by typing the member name and value into two text inputs. We
+          could get those values like this:
+        </p>
+        <code>
+          const myDataName = nameInput.value; <br />
+          const myDataValue = nameValue.value;
+        </code>
+        <p>
+          We could then add this new member name and value to the
+          <span class="highlight">person</span> object like this:
+        </p>
+        <code>person[myDataName] = myDataValue;</code>
+        <p>
+          To test this, try adding the following lines into your code, just
+          below the closing curly brace of the
+          <span class="highlight">person</span> object:
+        </p>
+        <code>
+          const myDataName = "height"; <br />
+          const myDataValue = "1.75m"; <br />
+          person[myDataName] = myDataValue;
+        </code>
+        <p>
+          Now try saving and refreshing, and entering the following into your
+          text input:
+        </p>
+        <code>person.height;</code>
+        <p>
+          Adding a property to an object using the method above isn't possible
+          with dot notation, which can only accept a literal member name, not a
+          variable value pointing to a name.
+        </p>
       </section>
       <section class="main-section" id="what_is_this?">
         <header>What is "this"?</header>
