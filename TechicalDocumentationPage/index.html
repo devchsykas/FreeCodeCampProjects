@@ -27,31 +27,148 @@
       >
       <a href="#test_your_skills!" class="nav-link">Test your skills!</a>
     </nav>
-
     <!-- Main Section -->
     <main id="main-doc">
       <!-- <header>JavaScript objects basics</header> -->
       <section class="main-section" id="object_basics">
         <header>Object basics</header>
-        <p></p>
-        <code></code>
-        <p></p>
-        <code></code>
+        <p>
+          An object is a collection of related data and/or functionality. These
+          usually consist of several variables and functions (which are called
+          properties and methods when they are inside objects). Let's work
+          through an example to understand what they look like.
+        </p>
+        <p>
+          To begin with, make a local copy of our
+          <a
+            href="https://github.com/mdn/learning-area/blob/main/javascript/oojs/introduction/oojs.html"
+            target="_blank"
+            >oojs.html</a
+          >
+          file. We'll use this as a basis for exploring basic object syntax.
+          While working with this example you should have your developer tools
+          JavaScript console open and ready to type in some commands.
+        </p>
+        <p>
+          As with many things in JavaScript, creating an object often begins
+          with defining and initializing a variable.Try entering the following
+          line below the JavaScript code that's already in your file, then
+          saving and refreshing:
+        </p>
+        <code>const person = {};</code>
+        <p>
+          Now open your browser's JavaScript console, enter
+          <span class="highlight">person</span> into it, and press
+          <span class="highlight">Enter/Return</span>. You should get a result
+          similar to one of the below lines:
+        </p>
+        <code>
+          [object Object] <br />
+          Object { } <br />
+          { }</code
+        >
+        <p>
+          Congratulations, you've just created your first object. Job done! But
+          this is an empty object, so we can't really do much with it. Let's
+          update the JavaScript object in our file to look like this:
+        </p>
+        <code
+          >const person = { <br />
+          name: ["Bob", "Smith"], <br />
+          age: 32, <br />
+          bio: function () { <br />
+          console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years
+          old.`); <br />
+          }, <br />
+          introduceSelf: function () { <br />
+          console.log(`Hi! I'm ${this.name[0]}.`); <br />
+          }, <br />
+          };
+        </code>
+        <p>
+          After saving and refreshing, try entering some of the following into
+          the JavaScript console on your browser devtools:
+        </p>
+        <code>
+          person.name; <br />
+          person.name[0]; <br />
+          person.age; <br />
+          person.bio(); // "Bob Smith is 32 years old." <br />
+          person.introduceSelf(); // "Hi! I'm Bob."
+        </code>
+        <p>
+          You have now got some data and functionality inside your object, and
+          are now able to access them with some nice simple syntax!
+        </p>
+        <p>
+          So what is going on here? Well, an object is made up of multiple
+          members, each of which has a name (e.g.
+          <span class="highlight">name</span> and
+          <span class="highlight">age</span> above), and a value (e.g.
+          <span class="highlight">['Bob', 'Smith']</span> and
+          <span class="highlight">32</span>). Each name/value pair must be
+          separated by a comma, and the name and value in each case are
+          separated by a colon. The syntax always follows this pattern:
+        </p>
+        <code>
+          const objectName = { <br />
+          member1Name: member1Value, <br />
+          member2Name: member2Value, <br />
+          member3Name: member3Value, <br />
+          };
+        </code>
+        <p>
+          The value of an object member can be pretty much anything — in our
+          person object we've got a number, an array, and two functions. The
+          first two items are data items, and are referred to as the object's
+          <strong class="bold-text">properties</strong>. The last two items are
+          functions that allow the object to do something with that data, and
+          are referred to as the object's
+          <strong class="bold-text">methods</strong>.
+        </p>
+        <p>
+          When the object's members are functions there's a simpler syntax.
+          Instead of <span class="highlight">bio: function ()</span> we can
+          write <span class="highlight">bio()</span>. Like this:
+        </p>
+        <code>
+          const person = { <br />
+          name: ["Bob", "Smith"], <br />
+          age: 32, <br />
+          bio() { <br />
+          console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years
+          old.`); <br />
+          }, <br />
+          introduceSelf() { <br />
+          console.log(`Hi! I'm ${this.name[0]}.`); <br />
+          }, <br />
+          };
+        </code>
+        <p>From now on, we'll use this shorter syntax.</p>
+        <p>
+          An object like this is referred to as an
+          <strong class="bold-text">object literal</strong> — we've literally
+          written out the object contents as we've come to create it. This is
+          different compared to objects instantiated from classes, which we'll
+          look at later on.
+        </p>
+        <p>
+          It is very common to create an object using an object literal when you
+          want to transfer a series of structured, related data items in some
+          manner, for example sending a request to the server to be put into a
+          database. Sending a single object is much more efficient than sending
+          several items individually, and it is easier to work with than an
+          array, when you want to identify individual items by name.
+        </p>
       </section>
       <section class="main-section" id="dot_notation">
         <header>Dot notation</header>
-        <p></p>
-        <p></p>
       </section>
       <section class="main-section" id="objects_as_object_properties">
         <header>Objects as object properties</header>
-        <p></p>
-        <code></code>
       </section>
       <section class="main-section" id="bracket_notation">
         <header>Bracket notation</header>
-        <p></p>
-        <code></code>
       </section>
       <section class="main-section" id="setting_object_members">
         <header>Setting object members</header>
