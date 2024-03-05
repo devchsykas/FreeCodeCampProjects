@@ -508,9 +508,56 @@
           // "Hi! I'm Frankie."
         </code>
       </section>
-      <!-- <section class="main-section" id="you've_been_using_objects_all_along">
-        <header>You've been using objects all along</header>
-      </section> -->
+      <section class="main-section" id="you've_been_using_objects_all_along">
+        <header class="underline">You've been using objects all along</header>
+        <p>
+          As you've been going through these examples, you have probably been
+          thinking that the dot notation you've been using is very familiar.
+          That's because you've been using it throughout the course! Every time
+          we've been working through an example that uses a built-in browser API
+          or JavaScript object, we've been using objects, because such features
+          are built using exactly the same kind of object structures that we've
+          been looking at here, albeit more complex ones than in our own basic
+          custom examples.
+        </p>
+        <p>So when you used string methods like:</p>
+        <code>myString.split(",");</code>
+        <p>
+          You were using a method available on a String object. Every time you
+          create a string in your code, that string is automatically created as
+          an instance of <span class="highlight">String</span>, and therefore
+          has several common methods and properties available on it.
+        </p>
+        <p>
+          When you accessed the document object model using lines like this:
+        </p>
+        <code>
+          const myDiv = document.createElement("div"); <br />
+          const myVideo = document.querySelector("video");
+        </code>
+        <p>
+          You were using methods available on a Document object. For each
+          webpage loaded, an instance of
+          <span class="highlight">Document</span> is created, called
+          <span class="highlight">document</span>, which represents the entire
+          page's structure, content, and other features such as its URL. Again,
+          this means that it has several common methods and properties available
+          on it.
+        </p>
+        <p>
+          The same is true of pretty much any other built-in object or API
+          you've been using — Array, Math, and so on.
+        </p>
+        <p>
+          Note that built in objects and APIs don't always create object
+          instances automatically. As an example, the Notifications API — which
+          allows modern browsers to fire system notifications — requires you to
+          instantiate a new object instance using the constructor for each
+          notification you want to fire. Try entering the following into your
+          JavaScript console:
+        </p>
+        <code>const myNotification = new Notification("Hello!");</code>
+      </section>
       <section class="main-section" id="test_your_skills!">
         <header class="underline">Test your skills!</header>
         <p>
