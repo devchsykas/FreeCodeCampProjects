@@ -404,11 +404,113 @@
         </p>
       </section>
       <section class="main-section" id="introducing_constructors">
-        <header>Introducing constructors</header>
+        <header class="underline">Introducing constructors</header>
+        <p>
+          Using object literals is fine when you only need to create one object,
+          but if you have to create more than one, as in the previous section,
+          they're seriously inadequate. We have to write out the same code for
+          every object we create, and if we want to change some properties of
+          the object - like adding a
+          <span class="highlight">height</span> property - then we have to
+          remember to update every object.
+        </p>
+        <p>
+          We would like a way to define the "shape" of an object — the set of
+          methods and the properties it can have — and then create as many
+          objects as we like, just updating the values for the properties that
+          are different.
+        </p>
+        <p>The first version of this is just a function:</p>
+        <code>
+          function createPerson(name) { <br />
+          const obj = {}; <br />
+          obj.name = name; <br />
+          obj.introduceSelf = function () { <br />
+          console.log(`Hi! I'm ${this.name}.`); <br />
+          }; <br />
+          return obj; <br />
+          }
+        </code>
+        <p>
+          This function creates and returns a new object each time we call it.
+          The object will have two members:
+        </p>
+        <ul>
+          <li>a property <span class="highlight">name</span></li>
+          <li>a method <span class="highlight">introduceSelf()</span>.</li>
+        </ul>
+        <p>
+          Note that <span class="highlight">createPerson()</span> takes a
+          parameter <span class="highlight">name</span> to set the value of the
+          <span class="highlight">name</span> property, but the value of the
+          <span class="highlight">introduceSelf()</span> method will be the same
+          for all objects created using this function. This is a very common
+          pattern for creating objects.
+        </p>
+        <p>
+          Now we can create as many objects as we like, reusing the definition:
+        </p>
+        <code>
+          const salva = createPerson("Salva"); <br />
+          salva.introduceSelf(); <br />
+          // "Hi! I'm Salva." <br />
+
+          const frankie = createPerson("Frankie"); <br />
+          frankie.introduceSelf(); <br />
+          // "Hi! I'm Frankie."
+        </code>
+        <p>
+          This works fine but is a bit long-winded: we have to create an empty
+          object, initialize it, and return it. A better way is to use a
+          <span class="bold-text">constructor</span>. A constructor is just a
+          function called using the
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new"
+            target="_blank"
+            >new</a
+          >
+          keyword. When you call a constructor, it will:
+        </p>
+        <ul>
+          <li>create a new object</li>
+          <li>
+            bind <span class="highlight">this</span> to the new object, so you
+            can refer to <span class="highlight">this</span> in your constructor
+            code
+          </li>
+          <li>run the code in the constructor</li>
+          <li>return the new object.</li>
+        </ul>
+        <p>
+          Constructors, by convention, start with a capital letter and are named
+          for the type of object they create. So we could rewrite our example
+          like this:
+        </p>
+        <code>
+          function Person(name) { <br />
+          this.name = name; <br />
+          this.introduceSelf = function () { <br />
+          console.log(`Hi! I'm ${this.name}.`); <br />
+          }; <br />
+          }
+        </code>
+        <p>
+          To call <span class="highlight">Person()</span> as a constructor, we
+          use <span class="highlight">new</span>:
+        </p>
+        <code>
+          const salva = new Person("Salva"); <br />
+          salva.introduceSelf(); <br />
+          // "Hi! I'm Salva." <br />
+
+          const frankie = new Person("Frankie"); <br />
+          frankie.introduceSelf(); <br />
+          // "Hi! I'm Frankie."
+        </code>
       </section>
-      <section class="main-section" id="you've_been_using_objects_all_along">
+      <!-- <section class="main-section" id="you've_been_using_objects_all_along">
         <header>You've been using objects all along</header>
-      </section>
+      </section> -->
       <section class="main-section" id="test_your_skills!">
         <header>Test your skills!</header>
       </section>
