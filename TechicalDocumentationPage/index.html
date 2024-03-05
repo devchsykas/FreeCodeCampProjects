@@ -31,7 +31,7 @@
     <main id="main-doc">
       <!-- <header>JavaScript objects basics</header> -->
       <section class="main-section" id="object_basics">
-        <header>Object basics</header>
+        <header class="underline">Object basics</header>
         <p>
           An object is a collection of related data and/or functionality. These
           usually consist of several variables and functions (which are called
@@ -162,7 +162,20 @@
         </p>
       </section>
       <section class="main-section" id="dot_notation">
-        <header>Dot notation</header>
+        <header class="underline">Dot notation</header>
+        <p>
+          Above, you accessed the object's properties and methods using
+          <strong class="bold-text">dot notation</strong>. The object name
+          (person) acts as the <strong class="bold-text">namespace</strong> — it
+          must be entered first to access anything inside the object. Next you
+          write a dot, then the item you want to access — this can be the name
+          of a simple property, an item of an array property, or a call to one
+          of the object's methods, for example:
+        </p>
+        <code>
+          person.age; <br />
+          person.bio();
+        </code>
       </section>
       <section class="main-section" id="objects_as_object_properties">
         <header>Objects as object properties</header>
