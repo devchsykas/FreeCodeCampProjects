@@ -222,10 +222,61 @@
         <p>Otherwise, your methods will no longer work.</p>
       </section>
       <section class="main-section" id="bracket_notation">
-        <header>Bracket notation</header>
+        <header class="underline">Bracket notation</header>
+        <p>
+          Bracket notation provides an alternative way to access object
+          properties. Instead of using dot notation like this:
+        </p>
+        <code>
+          person.age; <br />
+          person.name.first;
+        </code>
+        <p>You can instead use square brackets:</p>
+        <code>
+          person["age"]; <br />
+          person["name"]["first"];
+        </code>
+        <p>
+          This looks very similar to how you access the items in an array, and
+          it is basically the same thing — instead of using an index number to
+          select an item, you are using the name associated with each member's
+          value. It is no wonder that objects are sometimes called associative
+          arrays — they map strings to values in the same way that arrays map
+          numbers to values.
+        </p>
+        <p>
+          Dot notation is generally preferred over bracket notation because it
+          is more succinct and easier to read. However there are some cases
+          where you have to use square brackets. For example, if an object
+          property name is held in a variable, then you can't use dot notation
+          to access the value, but you can access the value using bracket
+          notation.
+        </p>
+        <p>
+          In the example below, the
+          <span class="highlight">logProperty()</span> function can use
+          <span class="highlight">person[propertyName]</span> to retrieve the
+          value of the property named in
+          <span class="highlight">propertyName</span>.
+        </p>
+        <code>
+          const person = { <br />
+          name: ["Bob", "Smith"], <br />
+          age: 32, <br />
+          }; <br />
+
+          function logProperty(propertyName) { <br />
+          console.log(person[propertyName]); <br />
+          } <br />
+
+          logProperty("name"); <br />
+          // ["Bob", "Smith"] <br />
+          logProperty("age"); <br />
+          // 32
+        </code>
       </section>
       <section class="main-section" id="setting_object_members">
-        <header>Setting object members</header>
+        <header class="underline">Setting object members</header>
       </section>
       <section class="main-section" id="what_is_this?">
         <header>What is "this"?</header>
