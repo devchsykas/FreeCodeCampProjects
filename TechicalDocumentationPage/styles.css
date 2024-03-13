@@ -63,6 +63,33 @@ body {
 ---------- Nav Section ----------
 */
 
+#navbar {
+  position: fixed; /* Fixed position to keep it always visible */
+  top: 0; /* Position it at the top */
+  left: 0; /* Position it on the left */
+  width: 350px; /* Set the width */
+  height: 100%; /* Make it full height */
+  background-color: #f0f0f0; /* Background color */
+  padding: 20px; /* Add padding */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+.nav-heading {
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+}
+.nav-link {
+  display: block; /* Display the links as block elements */
+  margin-bottom: 10px; /* Add margin between links */
+  text-decoration: none; /* Remove default link underline */
+  color: #333; /* Link color */
+}
+
+.nav-link:hover {
+  background-color: #ddd; /* Hover background color */
+}
+
 /*
 ---------- Main Section ----------
 */
