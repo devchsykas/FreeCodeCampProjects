@@ -93,3 +93,38 @@ body {
 /*
 ---------- Main Section ----------
 */
+
+.main-section {
+  margin-left: 350px; /* Adjust margin to accommodate the width of the navigation bar */
+  padding: 20px; /* Add padding */
+}
+
+.header {
+  font-size: 24px; /* Set font size for section headers */
+  margin-bottom: 15px; /* Add margin below headers */
+}
+
+.underline:hover {
+  border-bottom: 1px solid #ccc; /* Add underline effect to headers */
+}
+
+.highlight {
+  color: #007bff; /* Set color for highlighted text */
+}
+
+.bold-text {
+  font-weight: bold; /* Set font weight for bold text */
+}
+
+p {
+  margin-bottom: 15px; /* Add margin between paragraphs */
+}
+
+code {
+  font-family: Consolas, monospace; /* Use monospace font for code snippets */
+  background-color: #646262; /* Add background color for code snippets */
+  padding: 5px; /* Add padding */
+  border-radius: 3px; /* Add border radius */
+  display: block; /* Display code snippets as block elements */
+  margin-bottom: 15px; /* Add margin between code snippets */
+}
