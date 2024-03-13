@@ -50,6 +50,15 @@ a {
 ---------- Body Section ----------
 */
 
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  display: flex;
+}
+
 /*
 ---------- Nav Section ----------
 */
