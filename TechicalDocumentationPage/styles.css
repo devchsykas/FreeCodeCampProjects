@@ -128,3 +128,19 @@ code {
   display: block; /* Display code snippets as block elements */
   margin-bottom: 15px; /* Add margin between code snippets */
 }
+
+/*
+---------- Media query for smaller screens ----------
+*/
+
+@media only screen and (max-width: 768px) {
+  #navbar {
+    width: 100%; /* Make the navigation bar full width */
+    height: auto; /* Allow it to adjust its height based on content */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .main-section {
+    margin-left: 0; /* Remove left margin for main section */
+  }
+}
