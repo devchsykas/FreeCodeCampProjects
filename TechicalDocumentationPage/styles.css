@@ -67,7 +67,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 350px;
+  width: 400px;
   height: 100%;
   background-color: #f0f0f0;
   padding: 20px;
@@ -97,7 +97,7 @@ body {
 */
 
 .main-section {
-  margin-left: 350px;
+  margin-left: 400px;
   padding: 20px;
 }
 
