@@ -105,7 +105,7 @@ body {
 }
 
 .underline:hover {
-  border-bottom: 1px solid #ccc; /* Add underline effect to headers */
+  text-decoration: underline solid #ccc;
 }
 
 .highlight {
