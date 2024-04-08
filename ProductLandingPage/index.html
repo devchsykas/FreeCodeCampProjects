@@ -18,41 +18,63 @@
     />
   </head>
   <body>
-    <!--  Navbar -->
-    <section class="nav-section container">
+    <!-- NavBar Section Starts Here -->
+    <section class="navbar-fixed">
       <header id="header">
-        <nav id="nav-bar" class="light-blue lighten-4" role="navigation">
+        <nav id="nav-bar" role="navigation" class="light-blue lighten-4`">
           <div class="nav-wrapper">
             <a href="#!" class="brand-logo">
               <img
-                class="img-logo"
-                alt="Horizon bank logo"
-                src="./assets/logo.png"
-                width="65"
+                src="./assets/HorizonBank-logo.png"
+                alt="horizon bank logo"
                 height="65"
+                width="auto"
+                class="img-logo"
               />
             </a>
-            <a href="#" data-target="mobile-nav" class="sidenav-trigger"
-              ><i class="material-icons">menu</i></a
-            >
             <ul class="right hide-on-med-and-down">
-              <li class="nav-link"><a href="#">Product</a></li>
-              <li class="nav-link"><a href="#">Solutions</a></li>
-              <li class="nav-link"><a href="#">About</a></li>
-              <li class="nav-link btn"><a href="#">Log In</a></li>
-              <li class="nav-link btn"><a href="#">Open Account</a></li>
+              <li class="nav-link"><a href="#product">Product</a></li>
+              <li class="nav-link"><a href="#solutions">Solutions</a></li>
+              <li class="nav-link"><a href="#about">About</a></li>
+              <li class="nav-link"><a href="#contactUs">Contact Us</a></li>
+              <li class="nav-link">
+                <a href="#modal1" class="modal-trigger">Login</a>
+              </li>
+              <li class="nav-link">
+                <a href="#modal2" class="modal-trigger">Sign Up</a>
+              </li>
             </ul>
+            <!-- Mobile  Navigation Bar Starts from here -->
+            <a href="#!" class="sidenav-trigger" data-target="mobile-nav">
+              <i class="material-icons">menu</i>
+            </a>
             <ul class="sidenav" id="mobile-nav">
-              <li class="nav-link"><a href="#">Product</a></li>
-              <li class="nav-link"><a href="#">Solutions</a></li>
-              <li class="nav-link"><a href="#">About</a></li>
-              <li class="nav-link btn"><a href="#">Log In</a></li>
-              <li class="nav-link btn"><a href="#">Open Account</a></li>
+              <li><a href="#product">Product</a></li>
+              <li><a href="#solutions">Solutions</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contactUs">Contact Us</a></li>
+              <li>
+                <a
+                  href="#modal1"
+                  class="waves-effect waves-light btn modal-trigger"
+                  >Login</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#modal2"
+                  class="waves-effect waves-light btn modal-trigger"
+                  >Sign up</a
+                >
+              </li>
             </ul>
+            <!-- Mobile Navigation bar Ends Here -->
           </div>
         </nav>
       </header>
     </section>
+    <!-- NavBar Section Ends Here -->
+
     <!-- Main content -->
     <main id="main">
       <!--  Hero Section -->
