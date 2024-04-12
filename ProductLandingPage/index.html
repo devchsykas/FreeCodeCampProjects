@@ -109,7 +109,7 @@
         <div class="container">
           <div class="row">
             <h2 class="heading center">Our Services</h2>
-            <div class="col s12  l6">
+            <div class="col s12 l6">
               <i class="large material-icons product-icon">account_balance</i>
               <h5 class="product-title">Business Banking</h5>
               <p class="product-desc">
@@ -118,8 +118,10 @@
                 corporate loans.
               </p>
             </div>
-            <div class="col s12  l6">
-              <i class="large material-icons product-icon">account_balance_wallet</i>
+            <div class="col s12 l6">
+              <i class="large material-icons product-icon"
+                >account_balance_wallet</i
+              >
               <h5 class="product-title">Personal Banking</h5>
               <p class="product-desc">
                 Whether you're an individual or part of a family, we offer
@@ -128,7 +130,7 @@
                 solution for you.
               </p>
             </div>
-            <div class="col s12  l6">
+            <div class="col s12 l6">
               <i class="large material-icons product-icon">credit_card</i>
               <h5 class="product-title">Corporate credit cards</h5>
               <p class="product-desc">
@@ -137,16 +139,16 @@
                 low interest rates on purchases made through the card.
               </p>
             </div>
-            <div class="col s12  l6">
+            <div class="col s12 l6">
               <i class="large material-icons product-icon">sync_alt</i>
               <h5 class="product-title">Payments</h5>
               <p class="product-desc">
                 Payment processing has never been easier. We offer online,
-                  mobile and phone payments through Visa, MasterCard and
-                  Discover. You don't even need an app!
+                mobile and phone payments through Visa, MasterCard and Discover.
+                You don't even need an app!
               </p>
             </div>
-            <div class="col s12  l6">
+            <div class="col s12 l6">
               <i class="large material-icons product-icon">speed</i>
               <h5 class="product-title">Speedy Online Banking</h5>
               <p class="product-desc">
@@ -156,19 +158,14 @@
                 of your own home.
               </p>
             </div>
-            <div class="col s12  l6">
+            <div class="col s12 l6">
               <i class="large material-icons product-icon">manage_accounts</i>
               <h5 class="product-title">Automated workflows</h5>
               <p class="product-desc">
-                Our automated system allows you to manage your daily tasks
-                such as bill payments, direct deposits and recurring transfers
-                with just a few clicks.
+                Our automated system allows you to manage your daily tasks such
+                as bill payments, direct deposits and recurring transfers with
+                just a few clicks.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Product Section Ends Here-->
             </div>
           </div>
         </div>
@@ -183,7 +180,9 @@
             <div class="col s12 m4 l4">
               <div class="card solution-card white">
                 <div class="card-content">
-                  <span class="card-title solution-title center">Banking Services</span>
+                  <span class="card-title solution-title center"
+                    >Banking Services</span
+                  >
                   <ul class="solution-list">
                     <li>Online & Mobile Banking</li>
                     <li>Check Cashing</li>
@@ -195,7 +194,9 @@
             <div class="col s12 m4 l4">
               <div class="card solution-card">
                 <div class="card-content">
-                  <span class="card-title solution-title center">Move funds securely and easily</span>
+                  <span class="card-title solution-title center"
+                    >Move funds securely and easily</span
+                  >
                   <ul class="solution-list">
                     <li>ACH with pull authorization rules</li>
                     <li>Free domestic & international wires (USD)</li>
@@ -208,9 +209,13 @@
             <div class="col s12 m4 l4">
               <div class="card solution-card solution-card">
                 <div class="card-content">
-                  <span class="card-title solution-title center">Financial Management Tools</span>
+                  <span class="card-title solution-title center"
+                    >Financial Management Tools</span
+                  >
                   <p>Managing multiple bank accounts? We've got you covered.</p>
-                  <a href="#contact" class="btn solution-button">Get Started Now!</a>
+                  <a href="#contact" class="btn solution-button"
+                    >Get Started Now!</a
+                  >
                 </div>
               </div>
             </div>
@@ -225,15 +230,22 @@
           <h3 class="center about-header">About Us</h3>
           <div class="row">
             <div class="col s12 m6 l6">
-              <img src="/assets/img-our-team.jpg" alt="Our Team" class="responsive-img about-image"/>
+              <img
+                src="/assets/img-our-team.jpg"
+                alt="Our Team"
+                class="responsive-img about-image"
+              />
             </div>
             <div class="col hide-on-small-and-down s12 m6 l6 about-text">
-              <p class="flow-text">We are a group of passionate developers who have come together 
-                to create an easy-to-use platform to provide an easy way
-                for individuals to manage their finances. Our team consists of 
-                experienced professionals in the field of  software development,
-                as well as financial advisors who understand the importance of managing one’s own money.
-                Together, we aim to make personal finance accessible and user-friendly.</p>
+              <p class="flow-text">
+                We are a group of passionate developers who have come together
+                to create an easy-to-use platform to provide an easy way for
+                individuals to manage their finances. Our team consists of
+                experienced professionals in the field of software development,
+                as well as financial advisors who understand the importance of
+                managing one’s own money. Together, we aim to make personal
+                finance accessible and user-friendly.
+              </p>
             </div>
           </div>
         </div>
@@ -247,32 +259,47 @@
             <input type="hidden" name="_token" value="{!! csrf_token() !!}" />
             <div class="row">
               <div class="input-field col s12">
-                <i class="material-icons prefix">
-                  account_circle
-                </i>
-                <input id="name" type="text" class="validate" name="name" required/>
+                <i class="material-icons prefix"> account_circle </i>
+                <input
+                  id="name"
+                  type="text"
+                  class="validate"
+                  name="name"
+                  required
+                />
                 <label for="name">Name</label>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <i class="material-icons prefix">
-                  email
-                </i>
-                <input id="email" type="email" class="validate" name="email"  required/>
+                <i class="material-icons prefix"> email </i>
+                <input
+                  id="email"
+                  type="email"
+                  class="validate"
+                  name="email"
+                  required
+                />
                 <label for="email">Email Address</label>
-                </div>
+              </div>
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <i class="material-icons prefix">
-                  mode_edit
-                </i>
-                <textarea id="message" class="materialize-textarea" name="message"></textarea>
+                <i class="material-icons prefix"> mode_edit </i>
+                <textarea
+                  id="message"
+                  class="materialize-textarea"
+                  name="message"
+                ></textarea>
                 <label for="message">Message</label>
               </div>
             </div>
-            <button class="btn waves-effect waves-light right submit" type="submit" name="action">Submit
+            <button
+              class="btn waves-effect waves-light right submit"
+              type="submit"
+              name="action"
+            >
+              Submit
               <i class="material-icons right">send</i>
             </button>
           </form>
@@ -284,19 +311,15 @@
         <div class="container">
           <div class="row">
             <div class="col l6 s12">
-              <h5 class="white-text">
-                Horizon Bank
-              </h5>
+              <h5 class="white-text">Horizon Bank</h5>
               <p class="grey-text text-lighten-4">
-                We are a bank that offers you the best services in the industry. 
-                Our aim is to provide our customers with the highest level of 
-                service and satisfaction. 
+                We are a bank that offers you the best services in the industry.
+                Our aim is to provide our customers with the highest level of
+                service and satisfaction.
               </p>
             </div>
             <div class="col l3 offset-l3 s12">
-              <h5 class="white-text">
-                Products
-              </h5>
+              <h5 class="white-text">Products</h5>
               <ul>
                 <li><a href="#!">Savings Account</a></li>
                 <li><a href="#!">Current Account</a></li>
@@ -304,43 +327,29 @@
               </ul>
             </div>
             <div class="col l3 offset-l3 s12">
-              <h5 class="white-text">
-                Useful Links`
-              </h5>
+              <h5 class="white-text">Useful Links`</h5>
               <ul>
-                <li><a href="#">
-                  Login
-                </a></li>
+                <li><a href="#"> Login </a></li>
                 <li><a href="#">Open Account</a></li>
                 <li><a href="#">About Us</a></li>
               </ul>
             </div>
             <div class="col l3 offset-l3 s12">
-              <h5 class="white-text">
-                Contacts
-              </h5>
+              <h5 class="white-text">Contacts</h5>
               <ul class="footer-contact">
                 <li>
                   <a href="#!">
-                    <address class="address">
-                      New York, NY 10012 US
-                    </address>
+                    <address class="address">New York, NY 10012 US</address>
                   </a>
                 </li>
                 <li>
-                  <a href="#!" class="email">
-                    Email: info@horizon-bank.com
-                  </a>
+                  <a href="#!" class="email"> Email: info@horizon-bank.com </a>
                 </li>
                 <li>
-                  <a href="#!"  class="phone">
-                    Phone: +91 8765432109
-                  </a>
+                  <a href="#!" class="phone"> Phone: +91 8765432109 </a>
                 </li>
                 <li>
-                  <a href="#!" class="fax">
-                    Fax: +91 8765432109
-                  </a>
+                  <a href="#!" class="fax"> Fax: +91 8765432109 </a>
                 </li>
               </ul>
             </div>
@@ -348,13 +357,16 @@
         </div>
         <div class="footer-copyright">
           <div class="container">
-            © 2024 Copyright <a href="http://www.horizon-bank.com" target="_blank" rel="noopener">Horizon Bank</a>
+            © 2024 Copyright
+            <a href="http://www.horizon-bank.com" target="_blank" rel="noopener"
+              >Horizon Bank</a
+            >
           </div>
         </div>
       </footer>
       <!-- Footer Section Ends Here -->
     </main>
-    <!-- Main Content Ends Here -->                
+    <!-- Main Content Ends Here -->
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
