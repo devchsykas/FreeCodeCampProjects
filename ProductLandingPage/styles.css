@@ -123,6 +123,7 @@ h6 {
   margin: auto;
   padding-bottom: 2rem;
   font-size: 1.5rem;
+  font-family: var(--font-text);
 }
 
 .hero-section .btn {
@@ -135,4 +136,18 @@ h6 {
 
 .hero-section .btn:hover {
   background-color: var(--color-btn-hover);
+}
+
+/* Product Section */
+
+.product-section h2 {
+  font-size: 3rem;
+}
+
+.product-section .product-title {
+  font-size: 2rem;
+}
+
+.product-section .product-desc {
+  font-size: 1rem;
 }
