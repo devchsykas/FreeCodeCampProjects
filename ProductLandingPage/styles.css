@@ -103,3 +103,13 @@ h6 {
   letter-spacing: var(--spacing);
   color: var(--color-heading);
 }
+
+/* Navbar */
+
+.nav-wrapper {
+  background-color: #b3e5fc;
+}
+
+.nav-link a {
+  color: var(--color-nav-links);
+}
