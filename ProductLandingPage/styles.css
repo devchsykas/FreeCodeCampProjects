@@ -231,3 +231,29 @@ h6 {
   color: var(--color-text);
   line-height: 1.5;
 }
+
+/* Contact Us Section */
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 80%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.contact-section .contact-header h3 {
+  font-size: 3rem;
+  color: var(--color-heading);
+  margin-top: 1rem;
+}
+
+.contact-section .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-btn);
+}
