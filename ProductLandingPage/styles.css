@@ -258,6 +258,10 @@ h6 {
   background-color: var(--color-btn);
 }
 
+.contact-section .btn:hover {
+  background-color: var(--color-btn-hover);
+}
+
 /* Footer Section */
 .footer-section {
   width: 100%;
@@ -301,7 +305,11 @@ h6 {
 }
 
 .footer-copyright a {
-  color: var(--color-nav-links);
+  color: var(--color-text);
   transition: all 200ms ease-in-out;
   margin-left: 0.5rem;
+}
+
+.footer-copyright a:hover {
+  color: var(--color-nav-links);
 }
