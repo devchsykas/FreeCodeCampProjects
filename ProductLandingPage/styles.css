@@ -313,3 +313,14 @@ h6 {
 .footer-copyright a:hover {
   color: var(--color-nav-links);
 }
+
+/* Add media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+  /* Navbar adjustments for small screens */
+  .navbar-fixed {
+    position: relative;
+  }
+  .sidenav {
+    width: 70%;
+  }
+}
