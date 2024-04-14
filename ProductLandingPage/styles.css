@@ -257,3 +257,51 @@ h6 {
   transition: all 0.3s ease-in-out;
   background-color: var(--color-btn);
 }
+
+/* Footer Section */
+.footer-section {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-footer);
+  margin-top: 1rem;
+}
+
+.footer-section .container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.footer-section h5 {
+  font-size: 1.75rem;
+  color: var(--color-heading);
+}
+
+.footer-section p {
+  line-height: 1.5;
+  font-size: 1rem;
+  max-width: 60ch;
+}
+
+.footer-section ul li a {
+  color: var(--color-text);
+}
+
+.footer-section ul li a:hover {
+  color: var(--color-nav-links);
+}
+
+.footer-copyright {
+  font-size: 0.875rem;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.footer-copyright a {
+  color: var(--color-nav-links);
+  transition: all 200ms ease-in-out;
+  margin-left: 0.5rem;
+}
