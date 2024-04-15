@@ -353,4 +353,77 @@ h6 {
   .sidenav {
     width: 70%;
   }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .hero-section {
+    padding: 20px;
+  }
+
+  .product-section .product-title {
+    margin-bottom: 10px;
+  }
+
+  .footer-section {
+    padding-top: 30px;
+  }
+}
+
+/* Media query for medium screens (601px - 900px) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .hero-section {
+    padding: 30px;
+  }
+
+  .product-section .product-title {
+    margin-bottom: 15px;
+  }
+
+  .footer-section {
+    padding-top: 40px;
+  }
+}
+
+/* Media query for extra-large screens (1201px - 1600px) */
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
+  .nav-link {
+    font-size: 20px;
+  }
+
+  .hero-section {
+    padding: 50px;
+  }
+
+  .product-section .product-title {
+    margin-bottom: 25px;
+  }
+
+  .footer-section {
+    padding-top: 60px;
+  }
+}
+
+/* Media query for extra-extra-large screens (1601px and above) */
+@media only screen and (min-width: 1601px) {
+  .nav-link {
+    font-size: 22px;
+  }
+
+  .hero-section {
+    padding: 60px;
+  }
+
+  .product-section .product-title {
+    margin-bottom: 30px;
+  }
+
+  .footer-section {
+    padding-top: 70px;
+  }
 }
