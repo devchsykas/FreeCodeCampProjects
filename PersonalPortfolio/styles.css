@@ -1,0 +1,72 @@
+/* Reset Styles */
+
+:root {
+  --body-color: #868686;
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--body-color);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 1.4;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+::selection {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-shadow: none;
+}
+
+/* Layout */
+.container {
+  max-width: 98%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+}
+@media (min-width: 48em) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+main {
+  flex: 1;
+}
