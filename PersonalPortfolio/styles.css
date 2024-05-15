@@ -325,3 +325,51 @@ abbr {
 .profile-link:hover {
   color: #0056b3;
 }
+
+/*--------------------------------------------------------------
+/** 7. About me Section 
+--------------------------------------------------------------*/
+
+/* Styling the About Me section */
+.about-section {
+  padding: 100px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.sub-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.progress-container {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.progress {
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.progress-value {
+  background-color: #007bff;
+  height: 100%;
+  border-radius: 10px;
+}
