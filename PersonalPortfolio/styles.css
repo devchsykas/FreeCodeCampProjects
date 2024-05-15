@@ -550,3 +550,157 @@ abbr {
 .profile-link:hover {
   color: #0056b3;
 }
+
+/*--------------------------------------------------------------
+/** 8. Media Queries - Mobile Devices 
+--------------------------------------------------------------*/
+/* Header Section */
+
+@media only screen and (max-width: 768px) {
+  #header {
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-menu-list {
+    flex-direction: column;
+  }
+
+  .nav-menu-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Welcome Section */
+
+@media only screen and (max-width: 768px) {
+  .welcome-section {
+    padding: 50px 0;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .subheading {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+/* About Section */
+
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .about-container {
+    padding: 20px;
+  }
+
+  .description {
+    text-align: justify;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .progress-container {
+    margin-bottom: 20px;
+  }
+
+  .label {
+    margin-bottom: 5px;
+  }
+
+  .progress {
+    height: 10px;
+  }
+}
+
+/* Services Section */
+
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .services-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .service-info {
+    text-align: center;
+  }
+}
+
+/* Project Section */
+
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .project-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .project-title,
+  .project-info {
+    text-align: center;
+  }
+}
+
+/* Contact Section */
+
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .contact-header .title {
+    font-size: 24px;
+  }
+
+  .contact-header .subtitle {
+    font-size: 14px;
+  }
+
+  .cta-btn {
+    margin-bottom: 20px;
+  }
+}
+
+/* Footer Section */
+
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .footer-section {
+    padding: 30px 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .social-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .profile-link {
+    font-size: 20px;
+  }
+}
