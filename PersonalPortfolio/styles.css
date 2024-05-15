@@ -433,3 +433,54 @@ abbr {
   font-size: 16px;
   line-height: 1.6;
 }
+
+/*--------------------------------------------------------------
+/** 7. Projects Section 
+--------------------------------------------------------------*/
+.project-section {
+  padding: 100px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.project-heading .title {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  width: 300px;
+  margin: 0 20px 50px;
+  text-align: left;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-title a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-title a:hover {
+  text-decoration: underline;
+}
+
+.project-info {
+  font-size: 16px;
+  color: #666;
+}
