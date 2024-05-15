@@ -373,3 +373,63 @@ abbr {
   height: 100%;
   border-radius: 10px;
 }
+
+/*--------------------------------------------------------------
+/** 7. Services Section 
+--------------------------------------------------------------*/
+
+/* Styling the Services section */
+.services-section {
+  padding: 100px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+.services-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service-card {
+  width: calc(33.33% - 40px);
+  margin: 0 20px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+  font-size: 48px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.service-info {
+  text-align: left;
+  padding: 0 20px;
+}
+
+.service-info p {
+  font-size: 16px;
+  line-height: 1.6;
+}
