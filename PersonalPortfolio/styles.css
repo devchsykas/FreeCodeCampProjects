@@ -195,9 +195,9 @@ abbr {
 
 .btn {
   display: inline-block;
-  background-color: #007bff; /* Set background color */
-  color: #fff; /* Set text color */
-  padding: 10px 20px; /* Add padding */
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   border: none;
@@ -209,16 +209,62 @@ abbr {
 }
 
 .btn:hover {
-  background-color: #0056b3; /* Change background color on hover */
+  background-color: #0056b3;
 }
 
 /* Additional styles for a secondary button */
 .btn.secondary {
-  background-color: #6c757d; /* Set background color for secondary button */
+  background-color: #6c757d;
 }
 
 /* Additional styles for a small button */
 .btn.small {
-  padding: 5px 10px; /* Adjust padding for small button */
-  font-size: 14px; /* Adjust font size for small button */
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+/** 5. Header Section - Navigation 
+--------------------------------------------------------------*/
+
+/* Header Section */
+#header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+/* Styling the logo */
+.logo {
+  font-size: 24px;
+}
+
+/* Styling the navigation menu */
+.nav-menu-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-link:hover {
+  background-color: #007bff;
+}
+
+.nav-link.active {
+  font-weight: bold;
 }
