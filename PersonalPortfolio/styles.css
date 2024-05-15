@@ -484,3 +484,28 @@ abbr {
   font-size: 16px;
   color: #666;
 }
+
+/*--------------------------------------------------------------
+/** 7. Contact Section 
+--------------------------------------------------------------*/
+/* Styling the Contact Form section */
+.contact-section {
+  padding: 100px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-header .title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-header .subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  margin-bottom: 30px;
+}
